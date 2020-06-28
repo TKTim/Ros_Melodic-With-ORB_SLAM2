@@ -2,7 +2,11 @@
 #### Ros版本：Ros_Melodic
 #### 安裝套件：ORB_SLAM2  
 
+#### 0. [相機校正課程](https://blog.csdn.net/heroacool/article/details/51023921)
+
+
 #### 1. 下載Ros_Melodic  [官網教學](http://wiki.ros.org/Installation/Ubuntu) 記得要照著步驟做前，要確認是否為Melodic的教學。
+
 #### 2. 下載Pangolin
 ```
     # Install dependencies
@@ -47,6 +51,20 @@
     echo 'export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:'"`pwd`/Examples/ROS" >> ~/.bashrc
     ./build_ros.sh
 ```
+
+#### 6. 測試階段
+
+[Follow here](https://github.com/raulmur/ORB_SLAM2#6-rgb-d-example)
+>1. 下載fr1/xyz 的 tgz
+>2. 下載associate.py 並用來生成自己的 associations.txt 
+>python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
+>3. 在/ORB-slam內運行 
+>./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /home/user/Downloads/rgbd_dataset_freiburg1_xyz/ /home/user/Downloads/rgbd_dataset_freiburg1_xyz/associations.txt
+[ORB-test](https://www.youtube.com/watch?v=-EJFDlO215o)
+
+額外網站資源：
+[g20解說](https://www.cnblogs.com/gaoxiang12/p/5304272.html)
+[Webcam with ORB-SLAM2](https://zhuanlan.zhihu.com/p/29629824)
 
 以上部份教學來自：[參考網站](http://blog.leanote.com/post/gaunthan/Ubuntu-18.04-%E5%AE%89%E8%A3%85ROS-Melodic%EF%BC%8CORB-SLAM2)
 
