@@ -55,11 +55,16 @@
 #### 6. 測試階段
 
 [Follow here](https://github.com/raulmur/ORB_SLAM2#6-rgb-d-example)
->1. 下載fr1/xyz 的 tgz
->2. 下載associate.py 並用來生成自己的 associations.txt 
->python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
->3. 在/ORB-slam內運行 
->./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /home/user/Downloads/rgbd_dataset_freiburg1_xyz/ /home/user/Downloads/rgbd_dataset_freiburg1_xyz/associations.txt
+1. 下載fr1/xyz 的 tgz
+2. 下載associate.py 並用來生成自己的 associations.txt 
+```
+python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
+```
+3. 在/ORB-slam內運行 
+```
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /home/user/Downloads/rgbd_dataset_freiburg1_xyz/ /home/user/Downloads/rgbd_dataset_freiburg1_xyz/associations.txt
+```
+
 [ORB-test](https://www.youtube.com/watch?v=-EJFDlO215o)
 
 額外網站資源：
