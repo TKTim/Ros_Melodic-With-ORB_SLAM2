@@ -72,7 +72,18 @@ python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associ
 ```
 解壓 /root/catkin_ws/src/ORB_SLAM2/Vocabulary
 tar zxvf ORBvoc.txt.tar.gz 
+```
+第一步
+```
+roscore
+```
 
+第二步
+```
+roslaunch usb_cam usb_cam-test.launch
+```
+第三步
+```
 確保以下檔案存在
 rosrun ORB_SLAM2 Mono /root/catkin_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt /root/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/Asus.yaml
 ```
