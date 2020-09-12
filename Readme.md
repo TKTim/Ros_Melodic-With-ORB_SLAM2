@@ -67,6 +67,16 @@ python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associ
 
 [ORB-test](https://www.youtube.com/watch?v=-EJFDlO215o)
 
+
+#### 7. Webcam 
+```
+解壓 /root/catkin_ws/src/ORB_SLAM2/Vocabulary
+tar zxvf ORBvoc.txt.tar.gz 
+
+確保以下檔案存在
+rosrun ORB_SLAM2 Mono /root/catkin_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt /root/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/Asus.yaml
+```
+
 額外網站資源：
 [g20解說](https://www.cnblogs.com/gaoxiang12/p/5304272.html)
 [Webcam with ORB-SLAM2](https://zhuanlan.zhihu.com/p/29629824)
