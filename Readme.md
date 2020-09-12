@@ -87,6 +87,8 @@ roslaunch usb_cam usb_cam-test.launch
 確保以下檔案存在
 rosrun ORB_SLAM2 Mono /root/catkin_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt /root/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/Asus.yaml
 ```
+實作影片 [影片](https://www.youtube.com/watch?v=oc9EedC1OCY)
+---
 
 額外網站資源：
 [g20解說](https://www.cnblogs.com/gaoxiang12/p/5304272.html)
