@@ -73,6 +73,11 @@ python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associ
 解壓 /root/catkin_ws/src/ORB_SLAM2/Vocabulary
 tar zxvf ORBvoc.txt.tar.gz 
 ```
+到catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2 的CmakeLists.txt
+將find_package後改成自己的版本
+![image](https://github.com/TKTim/Ros_Melodic-With-ORB_SLAM2/blob/master/Screenshot%20from%202020-09-12%2012-57-27.png)
+
+
 第一步
 ```
 roscore
